@@ -37,7 +37,7 @@ form.addEventListener('submit',  async (e)=> {
 
   
 
-  await fetch("http://localhost:3000/save-user", {
+  await fetch("https://backend-auth-9g0f.onrender.com/api/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: nameInput.value, email: emailInput.value, password: passwordInput.value })
